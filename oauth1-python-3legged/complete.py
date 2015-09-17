@@ -22,7 +22,7 @@ class dotdict(dict):
 '''
 def main():
     #create new smart cookie to extract request token
-    cookie = Cookie.SmartCookie()
+    cookie = Cookie.SimpleCookie()
     
     #if a cookie is available, load it
     if os.environ.has_key('HTTP_COOKIE'):
